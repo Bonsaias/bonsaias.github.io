@@ -1,0 +1,81 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Task 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body id="body">
+  <div>
+      <p>
+        Задание 1
+        <ul>
+          <li>Создать страницу, содержимое которой отображается в браузере со
+            следующими отступами: 15% сверху, 10% слева, 50 пикселей справа
+            и 15% снизу.
+          </li>
+          <li> 
+            <button onclick="setGreenBg()">
+              Задать фон страницы зеленый
+            </button>
+          </li>
+          <li>
+            Поставить в качестве фона изображение, расположенное:
+            <ul>
+            <li>
+              <button onclick="setSameBg()">
+              в том же каталоге, что и HTML страница
+              </button>
+            </li>
+            <li>
+              <button onclick="setUpperBg()">
+              в каталоге \files, расположенном в том же каталоге, что и HTML страница
+              </button>
+            </li>
+            <li>
+              <button onclick="setDownBg()">
+                в каталоге, находящемся на уровень ниже HTML страницы.
+              </button>
+            </li>
+          </ul>
+          </li>
+          <li>
+            Сделать изображение неперемещаемым при прокрутке документа.
+          </li>
+          <li>
+            <button onclick="setBlueColor()">
+              Шрифт текста на странице сделать синим.
+            </button>
+          </li>
+        </ul>
+      </p>
+    </div>
+    <script>
+      function clr() {
+        document.body.style.backgroundColor = null;
+        document.body.style.backgroundImage = null;
+      }
+      function setGreenBg() {
+        clr();
+        document.body.style.backgroundColor = "#CEF6CE";
+      }
+      function setSameBg() {
+        clr();
+        document.body.style.backgroundImage = "url('bg.png')"; 
+      }
+      function setDownBg() {
+        clr();
+        document.body.style.backgroundImage = "url('../bg.png')";
+      }
+      function setUpperBg() {
+        clr();
+        document.body.style.backgroundImage = "url('files/bg.png')";
+      }
+      function setBlueColor(){
+        document.body.style.color = "#8181F7"
+      }
+    </script>
+  </body>
+</html>

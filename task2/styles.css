@@ -1,0 +1,52 @@
+body {
+    background-image: url('../bg.png');
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
+}
+
+
+.topbutton{
+    font-size: inherit;
+    font-family: inherit;
+    width:50px;
+    height: 50px;
+    border:2px solid #ccc;
+    background-color: white;
+    vertical-align: center;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+    border-radius: 100%;
+
+    }
+
+section {
+    max-width: 850px;
+    padding : 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 98px rgb(0 0 0 / 10%), 
+    0 10px 10px rgb(0 0 0 / 10%)
+}
+header {
+        max-width: 850px;
+        padding : 2em;
+        margin: 0 auto;
+        text-align: center;
+        background-color: white;
+        border-radius: 50px;
+        box-shadow: 0 10px 98px rgb(0 0 0 / 10%), 
+        0 10px 10px rgb(0 0 0 / 10%)
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
